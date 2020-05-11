@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elaine Alasagas Projects</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+
+	body {
+		margin: 0;
+		background-color: #000;
+	}
+	/*
+	.parallax {
+	  /* The image used 
+	  background-image: url("project_image.jpg");
+
+	  /* Set a specific height 
+	  min-height: 500px; 
+
+	  /* Create the parallax scrolling effect 
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+	*/
+
+	.container{
+	  width:100%;
+	  height:600px;
+	  overflow:hidden;
+	}
+	.project_image {
+	  width: 100%;
+	}
+
+	.img_overlay {
+		position: absolute;
+		margin-top: 48px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size:2.5vw;
+		/*font-size: 80px;*/
+		color: white;
+		font-family: Courier New;
+	}
+	
+	.title {
+		font-size:2.5vw;
+		/*font-size: 80px;*/
+		color: white;
+		font-family: Courier New;
+	}
+
+	.logo {
+		height: 48px;
+		width: auto;
+		float: left;
+		padding-right: 10px;
+	}
+
+	/*RESPONSIVE MENU BAR*/
+	.topnav {
+	  overflow: hidden;
+	}
+
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  font-family: Courier New;
+	}
+
+	.topnav a:hover {
+	  /*background-color: #ddd;*/
+	  color: black;
+	}
+
+	.topnav a.active {
+	  background-color: #ffbf00;
+	  color: white;
+	}
+
+	.topnav .icon {
+	  display: none;
+	}
+
+	@media screen and (max-width: 600px) {
+	  .topnav a:not(:first-child) {display: none;}
+	  .topnav a.icon {
+	    float: right;
+	    display: block;
+	  }
+	}
+
+	@media screen and (max-width: 600px) {
+	  .topnav.responsive {position: relative;}
+	  .topnav.responsive .icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	  }
+	  .topnav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: left;
+	  }
+	}
+
+
+/* FOR SQUARE RESPONSIVE IMAGES */
+/* side by side images */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* hover overlay text on images */
+#container {
+  position: relative;
+ /* width: 50%; */
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #D73F09;
+}
+
+#container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 20%;
+  left: 20%; 
+  -webkit-transform: translate(-20%, -20%);
+  -ms-transform: translate(-20%, -20%);
+  transform: translate(-20%, -20%);
+  text-align: left;
+}
+
+.image_containers {
+	margin-left: 400px;
+	margin-right: 400px;
+	margin-top: 400px
+	margin-bottom: 400px;
+}
+
+</style>
+
+</head>
+<body>
+	<header>
+
+		<!-- PLACEHOLDER LOGO-IMAGE -->
+<img src="https://clipartart.com/images/small-flowers-clip-art-23.jpg" class="logo">
+	<!-- MENU BAR -->
+<div class="topnav" id="myTopnav">
+	<a href="index.html">HOME</a>
+	<a href="projects.html" class="active">PROJECTS</a>
+	<a href="#artwork">ARTWORK</a>
+	<a href="#about">RESUME</a>
+	<a href="#about">ABOUT</a>
+	<a href="#contact">CONTACT</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+ 	<i class="fa fa-bars"></i>
+	</a>
+</div>
+
+</header>
+<!--<div class="parrallax"></div> -->
+<div class="container">
+<img src="project_image.jpg" class="project_image"> 
+	<div class="img_overlay">
+		<h1 class="title">Projects.</h1>
+	</div>
+</div>
+
+
+
+<div class="coding_projects">
+	<h1 class="title" style="text-align: center;">Coding.</h1>
+</div>
+
+<div class="coding_projects">
+	<h1 class="title" style="text-align: center;">Mobile.</h1>
+
+
+<div class="image_containers">
+<!--Hover images side by side-->
+<!--row 1-->
+<div class="row">
+<!-- osu -->
+  <div class="column" id="container">
+    <img src="http://web.engr.oregonstate.edu/~alasagae/work/osu.png" style="width:100%" class="image">
+ <div class="overlay">
+    <div class="text">
+    	<p>2018-present</p>
+    	<p>Currently pursuing computer-science post-bacc program with prospective graduation date of March 2020.</p>
+    </div>
+  </div>
+  </div> 
+
+ <!-- FB -->
+  <div class="column" id="container">
+    <img src="http://web.engr.oregonstate.edu/~alasagae/work/fb.png" style="width:100%">
+     <div class="overlay">
+    <div class="text">
+    	<p>January 2018-November 2018</p>
+    	<p>Machine Learning AI Technical Recruiter at Facebook at Seattle headquarters.</p>
+    </div>
+  </div>
+  </div>
+
+  <!-- amazon -->
+  <div class="column" id="container">
+    <img src="http://web.engr.oregonstate.edu/~alasagae/work/amzn.png" style="width:100%">
+     <div class="overlay">
+    <div class="text">
+    	<p>2013-January 2018</p>
+    	<p>I was a Recruiting-Coordinator (RC) my first 2 years employed at Amazon and became a Full-Cycle Recruiter by 2015 for IT Specialists for Amazon Fullfillment.  In 2016, I moved teams to Amazon Web Services and became a Technical Sourcing Recruiter in late 2016.  In late 2017, I moved to Alexa Smart Home and recruited for Machine Learning engineers.</p>
+    </div>
+  </div>
+  </div>
+
+
+
+
+</div>
+</div>
+</div>
+
+<div class="coding_projects">
+	<h1 class="title" style="text-align: center;">Others.</h1>
+</div>
+
+<script>
+
+//SCRIPT FOR MENU BAR 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+		
+</body>
+</html>
