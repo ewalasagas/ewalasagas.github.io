@@ -43,7 +43,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		display: flex;
+		display: fixed;
 		align-items: center;
 		justify-content: center;
 		font-size:2.5vw;
@@ -51,14 +51,13 @@
 		color: white;
 		font-family: Courier New;
 	}
-	
+	/*
 	.title {
 		font-size:2.5vw;
-		/*font-size: 80px;*/
 		color: white;
 		font-family: Courier New;
 	}
-
+	*/
 	.logo {
 		height: 48px;
 		width: auto;
@@ -118,70 +117,24 @@
 	  }
 	}
 
+	/*********** COLUMN CARDS *************/
+	* {
+	  box-sizing: border-box;
+	}
 
-/* FOR SQUARE RESPONSIVE IMAGES */
-/* side by side images */
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
+	.column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 30px;
+	  max-width: 400px;
+	}
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* hover overlay text on images */
-#container {
-  position: relative;
- /* width: 50%; */
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #D73F09;
-}
-
-#container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 15px;
-  position: absolute;
-  top: 20%;
-  left: 20%; 
-  -webkit-transform: translate(-20%, -20%);
-  -ms-transform: translate(-20%, -20%);
-  transform: translate(-20%, -20%);
-  text-align: left;
-}
-
-.image_containers {
-	margin-left: 400px;
-	margin-right: 400px;
-	margin-top: 400px
-	margin-bottom: 400px;
-}
+	/* Clearfix (clear floats) */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
 
 </style>
 
@@ -189,8 +142,9 @@
 <body>
 	<header>
 
-		<!-- PLACEHOLDER LOGO-IMAGE -->
+	<!-- PLACEHOLDER LOGO-IMAGE 
 <img src="https://clipartart.com/images/small-flowers-clip-art-23.jpg" class="logo">
+	-->
 	<!-- MENU BAR -->
 <div class="topnav" id="myTopnav">
 	<a href="index.html">HOME</a>
@@ -205,7 +159,7 @@
 </div>
 
 </header>
-<!--<div class="parrallax"></div> -->
+<!--<div class="parrallax"></div> 
 <div class="container">
 <img src="project_image.jpg" class="project_image"> 
 	<div class="img_overlay">
@@ -213,62 +167,35 @@
 	</div>
 </div>
 
+-->
+<div class="img_overlay">
+
+	<h1 class="title">Projects.</h1>
+
+	<h1 style="text-align: center;">Mobile.</h1>
 
 
-<div class="coding_projects">
-	<h1 class="title" style="text-align: center;">Coding.</h1>
-</div>
-
-<div class="coding_projects">
-	<h1 class="title" style="text-align: center;">Mobile.</h1>
-
-
-<div class="image_containers">
-<!--Hover images side by side-->
-<!--row 1-->
 <div class="row">
-<!-- osu -->
-  <div class="column" id="container">
-    <img src="http://web.engr.oregonstate.edu/~alasagae/work/osu.png" style="width:100%" class="image">
- <div class="overlay">
-    <div class="text">
-    	<p>2018-present</p>
-    	<p>Currently pursuing computer-science post-bacc program with prospective graduation date of March 2020.</p>
-    </div>
+  <div class="column">
+    <img src="Capture.JPG" alt="Snow" style="width:100%">
   </div>
-  </div> 
-
- <!-- FB -->
-  <div class="column" id="container">
-    <img src="http://web.engr.oregonstate.edu/~alasagae/work/fb.png" style="width:100%">
-     <div class="overlay">
-    <div class="text">
-    	<p>January 2018-November 2018</p>
-    	<p>Machine Learning AI Technical Recruiter at Facebook at Seattle headquarters.</p>
-    </div>
+  <div class="column">
+    <img src="Capture.JPG" alt="Forest" style="width:100%">
   </div>
+  <div class="column">
+    <img src="Capture.JPG" alt="Mountains" style="width:100%">
   </div>
-
-  <!-- amazon -->
-  <div class="column" id="container">
-    <img src="http://web.engr.oregonstate.edu/~alasagae/work/amzn.png" style="width:100%">
-     <div class="overlay">
-    <div class="text">
-    	<p>2013-January 2018</p>
-    	<p>I was a Recruiting-Coordinator (RC) my first 2 years employed at Amazon and became a Full-Cycle Recruiter by 2015 for IT Specialists for Amazon Fullfillment.  In 2016, I moved teams to Amazon Web Services and became a Technical Sourcing Recruiter in late 2016.  In late 2017, I moved to Alexa Smart Home and recruited for Machine Learning engineers.</p>
-    </div>
-  </div>
-  </div>
-
-
-
+</div>
 
 </div>
-</div>
+
+
+<div class="coding_projects">
+	<h1 style="text-align: center;">Mobile.</h1>
 </div>
 
 <div class="coding_projects">
-	<h1 class="title" style="text-align: center;">Others.</h1>
+	<h1 style="text-align: center;">Others.</h1>
 </div>
 
 <script>
