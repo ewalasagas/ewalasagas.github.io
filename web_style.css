@@ -59,7 +59,8 @@
 	}
 
 	.ent {
-		margin-bottom: 27%;
+		align-self: baseline;
+		margin-top: 30%;
 		border-style: solid;
 		border-width: thin;
 		font-size: 2vw;
