@@ -58,17 +58,23 @@
 	    width: 15em;
 	}
 
-	.ent {
+	div.ent {
+		/*
 		align-self: baseline;
-		margin-top: 30%;
 		border-style: solid;
 		border-width: thin;
 		font-size: 2vw;
 		color: white;
-		position: absolute;
 		text-transform: uppercase;
 		padding: 5px;
 		display: flex;
+		*/
+		align-self: center;
+		font-size: 2vw;
+	  	color: white;
+	  	margin: 0;
+	  	position: absolute;
+  		transform: translate(0%, 900%);
 	}
 
 	span {
