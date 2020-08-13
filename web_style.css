@@ -31,17 +31,6 @@
 		font-family: Courier New;
 	}
 
-	.ent {
-		/*border-style: solid;*/
-		font-size: 2vw;
-		color: white;
-		position: absolute;
-		text-transform: uppercase;
-		margin-top: 35%;
-	}
-
-
-
 	/*SOURCE: fly in animation - https://www.youtube.com/watch?v=QZpZ1zRcR6c*/
 
 	/*TYPING ANIMATION */
@@ -61,6 +50,20 @@
 	  	margin-top: 27%;
 	    width: 15em;
 	}
+
+	.ent {
+		/*border-style: solid;*/
+		font-size: 2vw;
+		color: white;
+		position: absolute;
+		text-transform: uppercase;
+		margin-top: 30%;
+		text-decoration: underline;
+	}
+
+
+
+
 
 	span {
 	  border-right: .05em solid;
