@@ -60,6 +60,7 @@
 
 	.ent {
 		border-style: solid;
+		border-width: thin;
 		font-size: 2vw;
 		color: white;
 		position: absolute;
