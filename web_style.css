@@ -1,3 +1,8 @@
+	header {
+		margin: 0;
+		background-color: #000;
+	}
+
 	body {
 		margin: 0;
 		background-color: #000;
@@ -9,6 +14,14 @@
 		min-width: 100vw;
 		min-height: 100vh;
 		object-fit: over;
+	}
+
+	.vid {
+	  position: fixed;
+	  right: 0;
+	  bottom: 0;
+	  min-width: 100%; 
+	  min-height: 100%;
 	}
 
 	.video_overlay {
@@ -45,11 +58,12 @@
 	    width: 15em;
 	}
 
-	.ent {
+	h1.ent {
 		/*border-style: solid;*/
 		font-size: 2vw;
 		color: white;
 		position: absolute;
+		display: block;
 		text-transform: uppercase;
 		margin-top: 40%;
 		text-decoration: underline;
