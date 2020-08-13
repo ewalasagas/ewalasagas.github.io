@@ -59,12 +59,13 @@
 	}
 
 	.ent {
-		/*border-style: solid;*/
+		border-style: solid;
 		font-size: 2vw;
 		color: white;
 		position: absolute;
 		text-transform: uppercase;
 		margin-top: 20em;
+		padding: 5px;
 	}
 
 	span {
