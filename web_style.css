@@ -74,7 +74,13 @@
 	  	color: white;
 	  	margin: 0;
 	  	position: absolute;
-  		transform: translate(0%, 900%);
+  		transform: translate(0%, 800%);
+  		text-transform: uppercase;
+  		text-decoration: underline;
+	}
+
+	.ent:hover {
+		color: teal;
 	}
 
 	span {
