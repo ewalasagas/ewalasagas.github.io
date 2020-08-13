@@ -58,15 +58,13 @@
 	    width: 15em;
 	}
 
-	h1.ent {
+	.ent {
 		/*border-style: solid;*/
 		font-size: 2vw;
 		color: white;
 		position: absolute;
-		display: block;
 		text-transform: uppercase;
 		margin-top: 40%;
-		text-decoration: underline;
 	}
 
 	span {
