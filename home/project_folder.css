@@ -1,0 +1,247 @@
+/** {
+  box-sizing: border-box;
+}
+*/
+.tab h5 {
+	text-align: left;
+	display:inline;
+	font-family: 'Comfortaa';
+	text-align: center;
+}
+
+label {
+	border-right: 0.5rem solid #3c4554;
+
+}
+.tab body {
+/*  background: #2c3e50;
+  color: #ecf0f1;*/
+  line-height: 1.618em;
+  font-color: white;
+}
+.wrapper {
+  max-width: 80rem;
+  width: 100%;
+}
+.tabs {
+  position: relative;
+  margin: 3rem 0;
+/*  background: #1abc9c;*/
+  height: 40rem;
+  flex-wrap: wrap;
+  align-content: left;
+}
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 4em;
+  padding: 0 1.618em;
+/*  background: black;*/
+/*  border-right: 0.2rem solid grey;*/
+/*  color: #fff;*/
+  cursor: pointer;
+  top: 0;
+/*  transition: all 0.25s;*/
+   border-radius: 20px 20px 0px 0px;
+}
+.tab-label:hover {
+  top: -0.5rem;
+  transition: top 0.25s;
+}
+.tab-content {
+	border-radius: 0px 20px 20px 20px;
+  height: 30rem;
+  position: absolute;
+  z-index: 1;
+  top: 2.75em;
+  left: 0;
+  padding: 1.618rem;
+  background: #fff;
+  color: #2c3e50;
+  border-right: 0.5rem solid #3c4554;
+  border-top: 0.2rem solid #3c4554;
+  border-bottom: 0.5rem solid #3c4554;
+  border-left: 0.2rem solid #3c4554;
+  opacity: 0;
+  font-family: 'Montserrat';
+   overflow: auto;
+}
+.tab-switch:checked + .tab-label {
+  background: #fff;
+/*  color: #2c3e50;*/
+  border-bottom: 0;
+/*  border-right: 0.125rem solid #fff;*/
+  z-index: 1;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+}
+
+.tab .container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /*padding: 10px;*/
+}
+
+/*.tab div.col-sm:hover {
+	background-color: #e3e3e3;
+	opacity: 0.4;
+}
+*/
+@media (max-width: 360px) {
+	.tab-label {
+	  position: relative;
+	  display: block;
+	  line-height: 2.75em;
+	  height: 4em;
+	  padding: 0 1.3em;
+	  cursor: pointer;
+	  top: 0;
+	   border-radius: 20px 20px 0px 0px;
+	}
+}
+
+@media (max-width: 280px) {
+	.tab-label {
+	  position: relative;
+	  display: block;
+	  line-height: 1em;
+	  height: 3em;
+	  padding: 0 1.0em;
+	  cursor: pointer;
+	  top: 15px;
+	   border-radius: 10px 10px 0px 0px;
+	}
+	.tab div.col-sm {
+	padding-top: 10px;
+	/*padding: 30px;*/
+/*	border: 0.25rem solid #bdc3c7;*/
+	}
+}
+
+
+.tab div.col-sm {
+	padding-top: 20px;
+	/*padding: 30px;*/
+/*	border: 0.25rem solid #bdc3c7;*/
+}
+
+#project_title.tab-label:nth-child(1) {
+	background-color: red;
+	color: white;
+}
+
+label.tab-label {
+	background: blue;
+}
+
+
+#mobile_projects {
+	background-color: red;
+}
+
+#web_projects {
+	background-color: blue;
+}
+
+#c_projects {
+	background-color: #00ab06;
+}
+
+#jsp_projects {
+	background-color: #b800b8;
+}
+
+#asp_projects {
+	background-color: #ff7700;
+}
+
+#art_projects {
+	background-color: #00d1ce;
+}
+
+#art_projects img {
+	padding: 10px;
+}
+/******************* create buttons in folders ********************/
+.white_button {
+	opacity: 0.8;
+	padding-top: 50px;
+  	position: relative;
+  	background-color: white;
+  	border-radius: 10px 10px 10px 10px;
+  	align-content: center;
+ 	text-align: center;
+  	width: 100%;
+  	height: 100%;
+}
+
+.main_image {
+	border-radius: 10px 10px 10px 10px;
+	top: -0.5rem;
+  display: block;
+  width: 100%;
+  background-color: white;
+  align-content: center;
+  text-align: center;
+}
+
+
+.white_button:hover {
+  opacity: 1;
+  top: -0.5rem;
+  right: -0.5rem;
+  transition: top 0.25s right 0.25s;
+  border-left: 0.4rem solid grey;
+  border-bottom: 0.4rem solid grey;
+}
+
+.overlay {
+	padding: 10px;
+}
+/*.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.white_button:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}*/
