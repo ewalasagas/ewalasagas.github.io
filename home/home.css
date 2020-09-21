@@ -57,6 +57,24 @@ li a {
 	}
 }
 
+/*@media screen and (max-width: 601px) {
+	.panel_title {
+		font-size: 8vw;
+		font-weight: 0px;
+		font-family: Bungee Shade;
+		letter-spacing: 1px;
+	    padding-bottom: 40px;
+	    text-align: left;
+	}*/
+	/* text padding */
+/*	.panel .inner {
+		padding-top: 10%;
+		margin: 10%;
+		background: none;
+	}
+}
+*/
+
 #nav {
 	color: black;
 	font-weight: bold;
@@ -444,7 +462,7 @@ li a {
 /*#div5 {animation-timing-function: ease-in-out;}*/
 
 	@keyframes mymove {
-	  from {left: -2100px;}
+	  from {left: -1900px;}
 	  to {left: 100%;}
 	}
 }
@@ -564,10 +582,10 @@ img #cartoon_me {
 /*	position: absolute; */
   display: block;
   width: 100%;
-/*  height: auto;*/
+  height: auto;
 }
 
-@media (max-width: 812px) {
+@media (max-width: 320px) {
     img#cartoon_me {
 /*    align-items: flex-end;
     display: flex;*/
