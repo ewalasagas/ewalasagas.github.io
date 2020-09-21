@@ -151,6 +151,42 @@ li a {
 /*  	z-index: 5;*/
 }
 
+@media (max-width: 731px) {
+    #image1 {
+/*    align-items: flex-end;
+    display: flex;*/
+	position: absolute; 
+
+	bottom:0; 
+	left: 0;
+    width: 100%; 
+    height: auto;
+    /*background-size: 100% 200%;*/
+/*	background-size: cover;*/
+  	animation-duration: 3s;
+  	animation-name: slidein;
+  	overflow: hidden;
+/*  	z-index: 5;*/
+	}
+	/* CLOUDS */
+	#clouds {
+		position: absolute; top:0; left: 0;
+	    width: 100%; 
+	    height: auto;
+/*	    background-size: 100% 200%;*/
+/*		background-size: cover;*/
+/*	  animation-duration: 10s;
+	  animation-name: cloud_slide;
+	  animation-iteration-count: infinite;*/
+/*	  animation-direction: alternate;*/
+		animation-timing-function: linear;
+	  opacity: 0.8;
+
+
+	}
+}
+
+
 /* city image slide in from left */
 @keyframes slidein {
   from {
@@ -170,14 +206,15 @@ li a {
     width: 100%; height: 100%;
     background-size: 100% 200%;
 	background-size: cover;
-  animation-duration: 10s;
+	animation-timing-function: linear;
+/*  animation-duration: 10s;
   animation-name: cloud_slide;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;*/
 /*  animation-direction: alternate;*/
   opacity: 0.8;
 }
 
-@keyframes cloud_slide {
+/*@keyframes cloud_slide {
   from {
     margin-left: 100%;
     width: 300%; 
@@ -188,7 +225,7 @@ li a {
     width: 100%;
   }
 }
-
+*/
 #panel2 {
 	z-index: 3;
 }
@@ -196,21 +233,63 @@ li a {
 /**********************LETTER ANIMATION ********************/
 .welcome {
 	text-align: right;
-  position: relative;
+  	position: relative;
 /*  font-weight: 900;*/
-padding-right: 100px;
-  font-size: 8em;
-  font-family: Bungee Shade;
+  	padding-right: 100px;
+  	font-size: 8em;
+  	font-family: Bungee Shade;
+}
+
+@media (max-width: 320px) {
+	.welcome {
+/*		text-align: center;*/
+  		position: relative;
+/*  font-weight: 900;*/
+		padding-top: 3em;
+		padding-right: 10px;
+	  	font-size: 3em;
+	  	font-family: Bungee Shade;
+	}
+	.welcome .text-wrapper {
+	  	position: relative;
+	  	display: inline-block;
+	  	padding-top: 0.5em;
+	  	padding-right: 0.05em;
+	  	padding-bottom: 0.1em;
+	  	overflow: hidden;
+	}
+}
+
+
+@media (max-width: 680px) {
+	.welcome {
+/*		text-align: center;*/
+  		position: relative;
+/*  font-weight: 900;*/
+		padding-top: 1em;
+		padding-right: 40px;
+	  	font-size: 3em;
+	  	font-family: Bungee Shade;
+	}
+	.welcome .text-wrapper {
+	  	position: relative;
+	  	display: inline-block;
+/*	  	padding-top: 0.5em;*/
+	  	padding-right: 0.05em;
+	  	padding-bottom: 0.1em;
+	  	overflow: hidden;
+	}
 }
 
 .welcome .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
+  	position: relative;
+  	display: inline-block;
+  	padding-top: 0.1em;
+  	padding-right: 0.05em;
+  	padding-bottom: 0.1em;
+  	overflow: hidden;
 }
+
 
 .welcome .letter {
   display: inline-block;
@@ -476,4 +555,3 @@ footer::before {
   
   content: '';*/
 }
-
